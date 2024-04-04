@@ -25,7 +25,7 @@ pipeline:
                   identifier: Maven_Build
                   spec:
                     shell: Sh
-                    command: mvn clean package dependency:copy-dependencies
+                    command: mvn clean deploy dependency:copy-dependencies
           platform:
             os: Linux
             arch: Amd64
